@@ -1,5 +1,5 @@
 ---
-import { PillBase } from '../components/ui/3d-adaptive-navigation-bar';
+import Header from '../components/Header.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -24,8 +24,8 @@ const {
     <title>{title}</title>
   </head>
   <body>
-    <!-- 3D Adaptive Navigation Pill (Framer Motion + React) -->
-    <PillBase client:load />
+    <!-- Navbar nativa estática en Astro (0 bytes de JS en el cliente) -->
+    <Header />
     <main>
       <slot />
     </main>
