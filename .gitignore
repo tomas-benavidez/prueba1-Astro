@@ -24,3 +24,9 @@ pnpm-debug.log*
 
 # Local skills / embedded git repos
 .agents/skills/ui-ux-pro-max-skill/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
