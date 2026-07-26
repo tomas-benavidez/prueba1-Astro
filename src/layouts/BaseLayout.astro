@@ -1,0 +1,33 @@
+---
+import { PillBase } from '../components/ui/3d-adaptive-navigation-bar';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { 
+  title = "Tomás Benavídez | Portfolio", 
+  description = "Portfolio personal de desarrollo web desarrollado con Astro" 
+} = Astro.props;
+---
+
+<!html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <!-- 3D Adaptive Navigation Pill (Framer Motion + React) -->
+    <PillBase client:load />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

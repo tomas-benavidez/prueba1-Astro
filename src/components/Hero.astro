@@ -1,0 +1,126 @@
+---
+---
+
+<section id="inicio" class="hero container">
+  <h1 class="title">Tomás Benavídez</h1>
+  <p class="subtitle">Portfolio</p>
+
+  <div id="sobre-mi" class="bio-card">
+    <p class="bio-text">
+      Cursando la carrera de <strong>Técnico Superior en Desarrollo de Software</strong>, combino una sólida base académica con el diseño y construcción de soluciones tecnológicas de punta a punta.
+    </p>
+    
+    <p class="bio-text">
+      Mi proyecto principal es <span class="highlight">Agridash</span>, una plataforma de analítica para el sector agropecuario estructurada como un monorepo. En ella aplico arquitecturas asíncronas de alta velocidad con <strong>Python (FastAPI)</strong>, interfaces dinámicas en <strong>Next.js 14 (TypeScript)</strong> y persistencia en la nube con <strong>Supabase (PostgreSQL)</strong>. Además, estoy profundamente interesado en la innovación y la transformación digital, integrando flujos de <strong>IA Agéntica</strong> para el procesamiento analítico profundo de datos de negocio.
+    </p>
+
+    <p class="bio-text">
+      A mi perfil técnico sumo habilidades blandas clave como la comunicación, la orientación a resultados y el trabajo en equipo, desarrolladas y consolidadas en mis experiencias laborales previas. Me motiva conectar la lógica del código con las necesidades reales de una organización: automatizar procesos, integrar sistemas complejos (APIs, ERPs) y aplicar buenas prácticas de desarrollo.
+    </p>
+
+    <p class="bio-text highlight-box">
+      🚀 Estoy abierto a desafíos y oportunidades (Trainee / Junior / Integraciones) que me permitan aportar valor y autonomía en equipos de desarrollo orientados a la transformación digital.
+    </p>
+  </div>
+
+  <div class="cta-group">
+    <a href="#contacto" class="btn btn-primary">Contactar</a>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--foreground);
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--primary);
+    margin-bottom: 3rem;
+  }
+
+  .bio-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    max-width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .bio-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+  }
+
+  .bio-text strong {
+    color: var(--foreground);
+  }
+
+  .highlight {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .highlight-box {
+    background: rgba(47, 233, 43, 0.05);
+    border-left: 3px solid var(--primary);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius);
+    color: var(--foreground);
+    font-weight: 500;
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background-color: var(--primary);
+    color: #0f0f0f;
+    box-shadow: 0 0 15px rgba(47, 233, 43, 0.25);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 25px rgba(47, 233, 43, 0.4);
+  }
+</style>

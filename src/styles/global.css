@@ -1,0 +1,141 @@
+/* Google Fonts: Space Grotesk & JetBrains Mono para estética técnica y cuadrada */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Reset básico */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --card: #0f0f0f;
+  --ring: #2fe92b;
+  --input: #1b1b1d;
+  --muted: #1b1b1d;
+  --accent: #1b1b1d;
+  --border: #26272d;
+  --radius: 0.25rem;
+  --chart-1: #2fe92b;
+  --chart-2: #ff9821;
+  --chart-3: #f57733;
+  --chart-4: #ff5102;
+  --chart-5: #6b7367;
+  --popover: #0f0f0f;
+  --primary: #2fe92b;
+  --sidebar: #000000;
+  --spacing: 0.25rem;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --secondary: #2a2a2c;
+  --background: #000000;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --foreground: #ffffff;
+  --destructive: #ff5102;
+  --shadow-blur: 24px;
+  --shadow-color: #000000;
+  --sidebar-ring: #2fe92b;
+  --shadow-spread: 0px;
+  --letter-spacing: 0em;
+  --shadow-opacity: 0.08;
+  --sidebar-accent: #1b1b1d;
+  --sidebar-border: #26272d;
+  --card-foreground: #ffffff;
+  --shadow-offset-x: 0;
+  --shadow-offset-y: 1px;
+  --sidebar-primary: #2fe92b;
+  --muted-foreground: #bbcbb2;
+  --accent-foreground: #ffffff;
+  --popover-foreground: #ffffff;
+  --primary-foreground: #0f0f0f;
+  --sidebar-foreground: #ffffff;
+  --secondary-foreground: #ffffff;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-primary-foreground: #0f0f0f;
+
+  /* Aliases para componentes */
+  --font-heading: var(--font-sans);
+  --font-body: var(--font-sans);
+  --color-bg: var(--background);
+  --color-surface: var(--card);
+  --color-surface-hover: var(--secondary);
+  --color-text: var(--foreground);
+  --color-text-muted: var(--muted-foreground);
+  --color-accent: var(--primary);
+  --color-accent-glow: rgba(47, 233, 43, 0.25);
+  --color-border: var(--border);
+  --container-max: 1024px;
+}
+
+.dark {
+  --card: #0f0f0f;
+  --ring: #2fe92b;
+  --input: #1b1b1d;
+  --muted: #1b1b1d;
+  --accent: #1b1b1d;
+  --border: #26272d;
+  --radius: 0.25rem;
+  --chart-1: #2fe92b;
+  --chart-2: #ff9821;
+  --chart-3: #f57733;
+  --chart-4: #ff5102;
+  --chart-5: #6b7367;
+  --popover: #0f0f0f;
+  --primary: #2fe92b;
+  --sidebar: #000000;
+  --spacing: 0.25rem;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --secondary: #2a2a2c;
+  --background: #000000;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --foreground: #ffffff;
+  --destructive: #ff5102;
+  --shadow-blur: 24px;
+  --shadow-color: #000000;
+  --sidebar-ring: #2fe92b;
+  --shadow-spread: 0px;
+  --letter-spacing: 0em;
+  --shadow-opacity: 0.08;
+  --sidebar-accent: #1b1b1d;
+  --sidebar-border: #26272d;
+  --card-foreground: #ffffff;
+  --shadow-offset-x: 0;
+  --shadow-offset-y: 1px;
+  --sidebar-primary: #2fe92b;
+  --muted-foreground: #bbcbb2;
+  --accent-foreground: #ffffff;
+  --popover-foreground: #ffffff;
+  --primary-foreground: #0f0f0f;
+  --sidebar-foreground: #ffffff;
+  --secondary-foreground: #ffffff;
+  --destructive-foreground: #ffffff;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-primary-foreground: #0f0f0f;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  letter-spacing: -0.01em;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}

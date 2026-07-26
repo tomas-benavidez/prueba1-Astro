@@ -1,0 +1,76 @@
+---
+const navItems = [
+  { name: 'Inicio', href: '#inicio' },
+  { name: 'Proyectos', href: '#proyectos' },
+  { name: 'Sobre mí', href: '#sobre-mi' },
+  { name: 'Contacto', href: '#contacto' },
+];
+---
+
+<header class="header">
+  <div class="container header-content">
+    <a href="#" class="logo">
+      <span class="logo-accent">&lt;</span>TB<span class="logo-accent">/&gt;</span>
+    </a>
+
+    <nav class="nav">
+      <ul>
+        {navItems.map((item) => (
+          <li>
+            <a href={item.href}>{item.name}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+  }
+
+  .logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .logo-accent {
+    color: var(--color-accent);
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+
+  .nav a:hover {
+    color: var(--color-accent);
+  }
+</style>
